@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <title>Vue JS Events</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <style>
+      .canvas {
+        width: 300px;
+        height: 300px;
+        margin-top: 20 px;
+        background: blueviolet;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!--We will see here how events work in vue js, like handling buttons,
+        we will increase a variable's (wage's) value by clicking a button
+        we can do it in two ways, using direct js in our code or calling the method to increase the wage-->
+
+    <div id="app">
+      <p>The current wage Adnan earns is {{ wage }}</p>
+      <button v-on:click="wage++">Please Allah Increase Adnan's Wage</button>
+      <button v-on:dblclick="wage+=2">
+        Double click this to increase Adnan's Wage by 2 unit
+      </button>
+
+      <button v-on:click="methodDecreaser(5)">Decrease Adnan's Wage</button>
+
+      <!--
+    We will make a button and control that button with a method and the method will alert everything about the click on the button or the click event...We canalso see that the console print all the ethod available for mmouse
+   -->
+
+      <button @click="AlertEvent">Log about the event</button>
+
+      <!--Now lets use this idea to print the mouse's position in a div by using mouse event's two method offsetX and offsetY....but we are using similar things, similar concepts but for a moving curson event not click event-->
+      <div class="canvas" @mousemove="logCoords">
+        {{ coords.x }},{{ coords.y }}
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

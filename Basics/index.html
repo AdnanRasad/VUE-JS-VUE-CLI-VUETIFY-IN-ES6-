@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>Vue Basics</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <style>
+      .one {
+        color: green;
+      }
+      .two {
+        text-decoration: line-through;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Using Vue JS not as a whole but using it in parts of a html.</h1>
+    <div id="app">
+      <h2>{{ title }}</h2>
+      <p>{{ greet("Morning") }}</p>
+      <a v-bind:href="url">FB</a>
+      <div v-bind:class="classes">Classes from Instance</div>
+      <input type="text" v-bind:value="name" />
+
+      <div :class="classes">Classes from Instance</div>
+      <input type="text" :value="name" />
+    </div>
+    <script src="app.js"></script>
+    <!--In app.js we will be using vue js, so its mandatory that we declare vue earlier than this line, just like we did-->
+  </body>
+</html>
