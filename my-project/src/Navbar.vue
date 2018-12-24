@@ -1,0 +1,50 @@
+ <!-- template script, styles, styles should be scoped otherwise these styles would also be used for whatever you have where you are including this file-->
+<!--either go for css scoped or do not use <nav> or <div> use unique name like <nav-Navbar> <div-Navbar> in the template and in style so that the styles do not screw others, fpr example, Allfriends.vue-->
+<template>
+  <nav>
+    <ul>
+      <li>
+        <a href="#">Home</a>
+      </li>
+      <li>
+        <a href="#">About</a>
+      </li>
+      <li>
+        <a href="#">Contact</a>
+      </li>
+    </ul>
+  </nav>
+</template>
+
+
+
+
+<script>
+export default {
+  name: "Navbar",
+  data() {
+    return {};
+  }
+};
+</script>
+
+
+<style scoped>
+nav {
+  text-align: center;
+}
+nav-ul {
+  padding: 0;
+}
+nav-li {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0;
+}
+a {
+  color: blue;
+}
+</style>
+
+
+
