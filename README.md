@@ -36,6 +36,16 @@ https://fonts.googleapis.com/icon?family=Material+Icons
 
 [copy these as stylesheet into index.html file (Not index.js)]
 
+# For Google Maps:
+Go https://console.developers.google.com
+
+Login, Make a project.
+
+Add Bank Account for that project.[Top left 3 line menu option>Billing>Payment method (Add here)>Budget Alert(opt)]
+Go Back to APIServices>Enable Api Services
+>Google Maps Javascript Api >Enable >Credentials>Credentials in the api manager>create Credentials>API>cope the key.
+
+In index.html:(<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD6E7tmI_VAA5uFebfUFth-VpQq_KsT0Io&callback=initMap"></script>)
 
 
 
