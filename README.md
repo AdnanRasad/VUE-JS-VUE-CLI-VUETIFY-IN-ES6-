@@ -30,8 +30,10 @@ const firestoreApp=firebase.initializeApp(config);
 export default firestoreApp.firestore()]
 
 # Styles
-https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
-https://fonts.googleapis.com/icon?family=Material+Icons"
+https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css
+
+https://fonts.googleapis.com/icon?family=Material+Icons
+
 [copy these as stylesheet into index.html file (Not index.js)]
 
 
