@@ -18,3 +18,23 @@ npm run dev.
 
 # For Project Notepad/RemindAdnan/Smriti/vue-routing:
 vue init webpack myproject (use Vue Router).
+
+# Firebase
+ npm install firebase --save
+
+[Copy Firebase config lines without script tag from firebase project.
+Put it in firebase folder, named init.js.
+import frebase from firebase;
+import 'firebase/firestore' 
+const firestoreApp=firebase.initializeApp(config);
+export default firestoreApp.firestore()]
+
+# Styles
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+[copy these into index.html file (Not index.js)]
+
+
+
+
+
