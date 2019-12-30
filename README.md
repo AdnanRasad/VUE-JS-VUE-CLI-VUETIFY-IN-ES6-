@@ -16,6 +16,10 @@ npm install [install all project dependency]
 
 npm run dev.
 
+# Just to run a vue project or say vue app
+
+npm run dev.
+
 # For Project Notepad/RemindAdnan/Smriti/vue-routing:
 vue init webpack myproject (use Vue Router).
 
